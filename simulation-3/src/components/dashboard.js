@@ -53,7 +53,24 @@ class Dashboard extends Component {
                     <option type="text" value="Refinance" >Green</option>
                 </select>
 
-                <input placeholder="Hobby" type="text" onChange={(e) => updateLastName(e.target.value)} />
+                <input placeholder="Hobby" type="text" onChange={(e) => hobby(e.target.value)} />
+                <input placeholder="birth day" type="text" onChange={(e) => birthDay(e.target.value)} />
+                <input placeholder="birth year" type="integer" onChange={(e) => birthDayYear(e.target.value)} />
+
+                <select onChange={(e) => birthdayMonth(e.target.value)}>
+                    <option type="text" value="Home Purchase" >Jan</option>
+                    <option type="text" value="Refinance" >Feb</option>
+                    <option type="text" value="Refinance" >March</option>
+                    <option type="text" value="Refinance" >April</option>
+                    <option type="text" value="Refinance" >May</option>
+                    <option type="text" value="Refinance" >June</option>
+                    <option type="text" value="Refinance" >July</option>
+                    <option type="text" value="Refinance" >Aug</option>
+                    <option type="text" value="Refinance" >Sep</option>
+                    <option type="text" value="Refinance" >Oct</option>
+                    <option type="text" value="Refinance" >Nov</option>
+                    <option type="text" value="Refinance" >Dec</option>
+                </select>
 
                 <button>Submit</button>
 
